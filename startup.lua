@@ -84,12 +84,16 @@ function checkDown()
         local fully_grown = block_data.state.age == age[block_data.name]
         if fully_grown then --is this fully grown?
             if crops[name] then --Is this one of the supported crops?
+                print("Supported Crop Found: " .. name)
                 turtle.digDown()
                 local seed_name = crops[name]
                 local seed_index = findItem(seed_name)
+                print("Finding Seed: " .. seed_name)
+                print("Seed Index: " .. seed_index)
                 if seed_index > 0 then --find seeds in inventory
                     turtle.select(seed_index)
                     turtle.placeDown()
+                    print("Placed!")
                 end
             end
         end
