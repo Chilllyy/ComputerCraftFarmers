@@ -59,10 +59,6 @@ function moveToEnd()
         elseif block_name == "minecraft:oak_fence" then --oak fence there, reached end
             turnLeft()
             turnLeft()
-            turnRight()
-            turnRight()
-            turnRight()
-            turnRight()
             return_home()
             end_reached = true
         else
