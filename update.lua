@@ -11,7 +11,7 @@ version_file.close()
 local url_template = "https://api.github.com/repos/" .. user .. "/" .. repo .. "/"
 
 function check()
-    local url = "https://raw.githubusercontent.con" .. user .. "/" .. repo .. "/" .. branch .. "/ver"
+    local url = "https://raw.githubusercontent.com" .. user .. "/" .. repo .. "/" .. branch .. "/ver"
     local cloud = tonumber(git.getWebRaw(url))
     local current = tonumber(version)
     return cloud_version > local_version
