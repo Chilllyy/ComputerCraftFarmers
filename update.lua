@@ -14,7 +14,7 @@ function check()
     local url = "https://raw.githubusercontent.com/" .. user .. "/" .. repo .. "/" .. branch .. "/ver"
     local cloud = tonumber(git.getWebRaw(url))
     local current = tonumber(version)
-    return cloud_version > local_version
+    return cloud > current
 end
 
 function update()
