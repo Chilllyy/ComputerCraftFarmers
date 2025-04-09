@@ -4,7 +4,7 @@ local user = "Chilllyy"
 local repo = "ComputerCraftFarmers"
 local branch = "main"
 
-local version_file = fs.open("/os/ver", 'r')
+local version_file = fs.open("/ver", 'r')
 local version = version_file.readAll()
 version_file.close()
 
