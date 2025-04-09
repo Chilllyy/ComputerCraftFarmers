@@ -21,6 +21,7 @@ function update()
     local url = url_template .. "contents?ref=" .. branch
     local folder = "/"
     git.clone(url, folder)
+    os.reboot()
 end
 
 return {check = check, update = update}
