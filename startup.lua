@@ -36,6 +36,7 @@ function start()
     if (turtle.getFuelLevel() <= 100) then
         refuel() 
     end
+    turtle.select(1)
     while true do
         local event, side, channel, reply, data, distance = os.pullEvent("modem_message")
 
@@ -113,7 +114,7 @@ function findItem(item_name)
             end
         end
         index = index + 1
-    until index >= 15
+    until index >= 16
 
     return -1
 end
